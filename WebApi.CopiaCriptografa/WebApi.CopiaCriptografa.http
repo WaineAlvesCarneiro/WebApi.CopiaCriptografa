@@ -1,0 +1,70 @@
+@WebApi.CopiaCriptografa_HostAddress = http://localhost:5125
+
+### WEATHER FORECAST (default)
+GET {{WebApi.CopiaCriptografa_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+### --- TudoLancadoController ---
+
+### GET Todos os TudoLancados
+GET {{WebApi.CopiaCriptografa_HostAddress}}/api/TudoLancado
+Accept: application/json
+
+### GET TudoLancado por ID
+GET {{WebApi.CopiaCriptografa_HostAddress}}/api/TudoLancado/1
+Accept: application/json
+
+### POST Novo TudoLancado (com ID de um Lancamento existente)
+POST {{WebApi.CopiaCriptografa_HostAddress}}/api/TudoLancado
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+### PUT Atualizar TudoLancado
+PUT {{WebApi.CopiaCriptografa_HostAddress}}/api/TudoLancado/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "idTexto": 1,
+  "textoCrypt": ""
+}
+
+### DELETE TudoLancado
+DELETE {{WebApi.CopiaCriptografa_HostAddress}}/api/TudoLancado/1
+Accept: application/json
+
+###
+### --- LancamentosController ---
+
+### GET Todos os Lancamentos
+GET {{WebApi.CopiaCriptografa_HostAddress}}/api/Lancamentos
+Accept: application/json
+
+### GET Lancamento por ID
+GET {{WebApi.CopiaCriptografa_HostAddress}}/api/Lancamentos/1
+Accept: application/json
+
+### POST Novo Lancamento
+POST {{WebApi.CopiaCriptografa_HostAddress}}/api/Lancamentos
+Content-Type: application/json
+
+{
+  "texto": "Conteúdo de teste"
+}
+
+### PUT Atualizar Lancamento
+PUT {{WebApi.CopiaCriptografa_HostAddress}}/api/Lancamentos/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "texto": "Conteúdo atualizado"
+}
+
+### DELETE Lancamento
+DELETE {{WebApi.CopiaCriptografa_HostAddress}}/api/Lancamentos/1
+Accept: application/json
