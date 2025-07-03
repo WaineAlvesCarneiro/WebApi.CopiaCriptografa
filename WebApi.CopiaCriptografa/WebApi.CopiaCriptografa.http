@@ -1,10 +1,5 @@
 @WebApi.CopiaCriptografa_HostAddress = http://localhost:5125
 
-### WEATHER FORECAST (default)
-GET {{WebApi.CopiaCriptografa_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
 ### --- TudoLancadoController ---
 
 ### GET Todos os TudoLancados

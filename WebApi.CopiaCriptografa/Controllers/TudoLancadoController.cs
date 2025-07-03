@@ -6,8 +6,8 @@ using WebApi.CopiaCriptografa.Models;
 
 namespace WebApi.CopiaCriptografa.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class TudoLancadoController : Controller
     {
         private readonly DbContextLancCripto _context;
